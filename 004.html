@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레드향 주문하기</title>
+    <style>
+        h1 {
+            display: block;
+            font-size: 2em;
+            margin-block-start:0.67em;
+            margin-block-end: 0.67;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+            font-weight: bold;
+        }
+       fieldset {
+           display: block;
+           border-width: 2px;
+       }
+       .bold {
+           font-weight: bold;
+       }
+       p {
+           display: block;
+       }
+       .small {
+           font-size: 0.8em;
+       }
+    </style>
+</head>
+<body>
+    <h1>레드향 주문하기</h1>
+    <div id="con">
+        <form> 
+            <fieldset> 
+            <legend>상품 선택</legend>
+            <p class="bold">주문할 상품을 선택해 주세요.</p>
+            <ul id="pro">
+                <li>
+                <label>    
+                <input type="checkbox" value="3">선물용 3kg</label>
+                <input type="number" min="0" max="5">개
+                <span class="small">(최대 5개)</span>
+                </li>
+            
+                <li>
+                <label>    
+                <input type="checkbox" value="5">가정용 5kg</label>
+                <input type="number" min="0" max="3">개
+                <span class="small">(최대 3개)</span>
+                </li>
+            
+                 <li>
+                <label>    
+                <input type="checkbox" value="3">선물용 3kg</label>
+                <input type="number" min="0" max="5">개
+                <span class="small">(최대 5개)</span>
+                </li>
+           
+                <li>
+                <label>    
+                <input type="checkbox" value="5">가정용 5kg</label>
+                <input type="number" min="0" max="3">개
+                <span class="small">(최대 3개)</span>
+                </li>
+            </ul>
+                <p class="bold">포장 선택</p>
+            <ul>    
+                <label><li><input type="radio" name="for" value="yes">선물 포장</li></label>
+                <label><li><input type="radio" name="for" value="no">포장 안 함</li></label>
+            </ul>
+            </fieldset>   
+            <fieldset>
+            <legend>배송 정보</legend>
+                <ui id="shi">
+                   <li><label for="user name">이름</label>
+                    <input type="text" id="user name"></li>
+                    <li><label for="addr" >배송 주소</label>
+                    <input type="text" id="addr"></li>
+                    <li><label for="mail">이메일</label>
+                    <input type="mail" id="ema"></li>
+                    <li><label for="phone">연락처</label>
+                    <input type="text" id="phone"></li>
+                    <li><label for="day">배송 지정</label>
+                    <input type="date" id="day">
+                    <span class="small">(주문일로부터 최소 3일 이후)</span></li>
+                    <li><label for="memo">메모</label>
+                    <textarea id="meme" cols="40" rows="5"></textarea></li>
+                </ui>
+            </fieldset>
+                 <input type="submit" value="주문하기">
+                 <input type="reset" value="취소하기">
+            </div>
+       </form>
+    </div>    
+    
+</body>
+</html>

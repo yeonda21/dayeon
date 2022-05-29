@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 20px, 10px;
+        }
+        td:last-of-type {
+            width: 200px;
+            text-align: center;
+        }
+        textarea {
+            width: 95%;
+            height: 200px;
+        }
+        
+    </style>
+</head>
+<body>
+        <h1>수습 국원 지원 양식</h1>
+        <table>
+            <tr>
+                <th rowspan="3">개인정보</th>
+                <th>이름</th>
+                <td input type="text" name="irum" placehoder="이름을 입력하세요"></td>
+            </tr>
+            <tr>
+                <th>주민번호</th>
+                <td input type="text" name="jumin" placehoder="주민번호를 입력하세요"></td>
+            </tr>
+            <tr>
+                <th>연락처</th>
+                <td input type="text" name="juso" placehorder="주소를 입력하세요"></td>
+            </tr>
+            <tr>
+                <th>지원동기</th>
+                <td colspan="2">
+                    <textarea mane="cause"></textarea></td>
+              </tr>
+        </table>
+</body>
+</html>
